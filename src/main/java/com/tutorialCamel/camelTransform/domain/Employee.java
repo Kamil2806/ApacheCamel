@@ -32,7 +32,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "EmployeeWithAddress{" +
                 "name='" + name + '\'' +
                 ", id='" + id + '\'' +
                 ", joinName='" + joinName + '\'' +

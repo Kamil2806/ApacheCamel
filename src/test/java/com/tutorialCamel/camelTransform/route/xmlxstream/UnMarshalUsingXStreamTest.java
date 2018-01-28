@@ -17,7 +17,7 @@ public class UnMarshalUsingXStreamTest extends CamelTestSupport {
     @Test
     public void unMarshalXStreamTest() throws InterruptedException {
 
-        //String expected = "Employee{name='kamil', id='123', joinName='12.01.2018'}";
+        //String expected = "EmployeeWithAddress{name='kamil', id='123', joinName='12.01.2018'}";
         Employee employee = new Employee();
         employee.setName("kamil");
         employee.setJoinName("12.01.2018");

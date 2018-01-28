@@ -26,7 +26,7 @@ public class XML2JSONRouteTest extends CamelTestSupport{
     public void json2xmlTest(){
 
         String expected = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n" +
-                "<Employee><id>123</id><joinName>12.01.2018</joinName><name>kamil</name></Employee>\r\n";
+                "<EmployeeWithAddress><id>123</id><joinName>12.01.2018</joinName><name>kamil</name></EmployeeWithAddress>\r\n";
         String response = template.requestBody("direct:unMarshalEmployeeJson2Xml", "{\"name\":\"kamil\",\"id\":\"123\",\"joinName\":\"12.01.2018\"}", String.class);
 
         System.out.println("***respone****: " + response);

@@ -13,7 +13,7 @@ public class XML2JSONRoute extends RouteBuilder{
                 .to("log:?level=INFO&showBody=true");
 
         final XmlJsonDataFormat xmlJsonDataFormat = new XmlJsonDataFormat();
-        xmlJsonDataFormat.setRootName("Employee");
+        xmlJsonDataFormat.setRootName("EmployeeWithAddress");
 
         from("direct:unMarshalEmployeeJson2Xml")
                 //.unmarshal().xmljson()
